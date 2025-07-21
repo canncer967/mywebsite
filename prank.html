@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Money</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #222, #444);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
+    }
+
+    #prank-button {
+      background-color: #ff007f;
+      border: none;
+      padding: 20px 40px;
+      font-size: 1.5em;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #prank-button:hover {
+      background-color: #e60073;
+      transform: scale(1.1);
+    }
+
+    #middle-finger {
+      display: none;
+      margin-top: 50px;
+    }
+
+    #middle-finger img {
+      width: 300px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Button to Claim Your Money 💸</h1>
+  <button id="prank-button">Your Money</button>
+
+  <div id="middle-finger">
+    <p>Gotcha! 😜</p>
+    <img src="https://www.gifcen.com/wp-content/uploads/2022/12/middle-finger-gif-7.gif" alt="Middle Finger">
+    <!-- Replace the above src with your own gif URL if you have one -->
+  </div>
+
+  <script>
+    document.getElementById('prank-button').addEventListener('click', function () {
+      document.getElementById('middle-finger').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
